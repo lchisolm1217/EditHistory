@@ -8,13 +8,10 @@ import java.util.Stack;
 public class Main {
 
     public static void main(String[] args) {
-	// write your code here
 
-
+        //Create instance of EditHistory class
         EditHistory myHistory = new EditHistory();
         editDoc(myHistory);
-
-
 
 
     }
@@ -28,6 +25,10 @@ public class Main {
         System.out.println("Enter 5 to quit");
         Scanner scan = new Scanner(System.in);
         int input;
+        /*while myStack(field in EditHistory instance a) is not greater than 10 in size
+        user is asked to pick a command, dependant on their command
+        a method within EditHistory class is carried out. When myStack is at size 10, it is printed out
+        */
         while(a.getHistory().size() <= 10){
             input = scan.nextInt();
             if (input ==1) {
